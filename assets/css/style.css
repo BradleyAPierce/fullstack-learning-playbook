@@ -1,0 +1,47 @@
+body {
+  background-color: #f8f9fa;
+}
+
+.hero-banner {
+  background: linear-gradient(120deg, #0062cc, #003366);
+}
+
+.timeline {
+  position: relative;
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 1rem 0;
+}
+
+.timeline-item {
+  position: relative;
+  flex: 0 0 220px;
+  margin: 0 1rem;
+  background: #fff;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.timeline-item:hover {
+  transform: scale(1.05);
+}
+
+.timeline-icon {
+  font-size: 2rem;
+  color: #0062cc;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-item.active {
+  border: 3px solid #0062cc;
+  background-color: #e9f3ff;
+}
+
+.card {
+  border-radius: 10px;
+}
