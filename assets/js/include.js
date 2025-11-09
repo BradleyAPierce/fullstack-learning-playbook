@@ -10,15 +10,36 @@ document.addEventListener("DOMContentLoaded", () => {
       const html = await response.text();
       el.innerHTML = html;
 
-      // 🔹 After the navbar is loaded, highlight the current active link
+      // 🔹 Run helper functions after navbar is loaded
       if (file.includes("navbar.html")) {
+        fixNavbarLinks();
         highlightActiveLink();
       }
+
+      // 🔹 Initialize scroll animations slightly after load
+      setTimeout(animateOnScroll, 300);
     } catch (err) {
       console.error(err);
     }
   });
 });
+
+/**
+ * Adjust navbar links depending on current page depth
+ * Makes links work correctly from both index.html and /phases/ pages
+ */
+function fixNavbarLinks() {
+  const isRoot =
+    window.location.pathname.endsWith("index.html") ||
+    window.location.pathname === "/" ||
+    !window.location.pathname.includes("/phases/");
+  const links = document.querySelectorAll("[data-link]");
+  links.forEach((link) => {
+    const target = link.getAttribute("data-link");
+    const href = isRoot ? target : `../${target}`;
+    link.setAttribute("href", href);
+  });
+}
 
 /**
  * Highlight the active page in the navbar
@@ -38,7 +59,7 @@ function highlightActiveLink() {
 }
 
 /**
- * Animate elements when they come into view
+ * Animate cards when they come into view
  */
 function animateOnScroll() {
   const cards = document.querySelectorAll(".glass-card");
@@ -47,7 +68,7 @@ function animateOnScroll() {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add("animate-visible");
-          observer.unobserve(entry.target); // trigger only once
+          observer.unobserve(entry.target); // Trigger only once
         }
       });
     },
@@ -55,8 +76,3 @@ function animateOnScroll() {
   );
   cards.forEach((card) => observer.observe(card));
 }
-
-document.addEventListener("DOMContentLoaded", () => {
-  // Run once navbar loads
-  setTimeout(animateOnScroll, 300);
-});
