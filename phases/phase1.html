@@ -1,48 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Phase 0 – Foundation</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/css/style.css">
-</head>
-<body>
-  <!-- Navbar (same as index) -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-      <a class="navbar-brand" href="../index.html">Full-Stack Learning Playbook</a>
-    </div>
-  </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phase 1 – Modular Front-End Architecture (React)</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="../index.html"
+          >Full-Stack Learning Playbook</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="phase0.html">Phase 0</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="phase1.html">Phase 1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="phase2.html">Phase 2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="phase3.html">Phase 3</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="phase4.html">Phase 4</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-  <!-- Hero Banner -->
-  <header class="bg-primary text-white text-center py-5 mb-4">
-    <h1>Phase 0: Foundation</h1>
-    <p>Building your core web development confidence.</p>
-  </header>
+    <!-- Hero -->
+    <header
+      class="text-center text-white py-5 mb-4"
+      style="background: linear-gradient(135deg, #0a192f, #112240)">
+      <div class="container">
+        <h1 class="fw-bold text-accent">
+          Phase 1: Modular Front-End Architecture (React)
+        </h1>
+        <p class="lead">
+          Transform static pages into interactive, component-based applications
+          using React and ES6 best practices.
+        </p>
+      </div>
+    </header>
 
-  <!-- Breadcrumb -->
-  <nav aria-label="breadcrumb">
-    <ol class="breadcrumb container">
-      <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
-      <li class="breadcrumb-item active">Phase 0</li>
-    </ol>
-  </nav>
+    <!-- Breadcrumb -->
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb container">
+        <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+        <li class="breadcrumb-item active">Phase 1</li>
+      </ol>
+    </nav>
 
-  <section class="container mb-5">
-    <h2>Overview</h2>
-    <p>Learn HTML, CSS, and core JavaScript while rebuilding one playbook page from scratch.</p>
+    <!-- Content -->
+    <section class="container mb-5">
+      <div class="row">
+        <!-- Main -->
+        <div class="col-md-8">
+          <h2 class="text-accent fw-semibold mb-3">Technical Objectives</h2>
+          <ul>
+            <li>
+              Understand how JSX renders through React’s virtual DOM engine.
+            </li>
+            <li>
+              Structure projects using components that separate logic, style,
+              and data.
+            </li>
+            <li>
+              Use props and state to create dynamic, reusable UI elements.
+            </li>
+            <li>
+              Integrate Bootstrap and custom CSS for consistent styling and
+              branding.
+            </li>
+            <li>
+              Organize folders (`/components`, `/assets`, `/data`) for scalable
+              React apps.
+            </li>
+          </ul>
 
-    <h3>Courses</h3>
-    <ul>
-      <li>HTML Essential Training</li>
-      <li>CSS Essential Training</li>
-      <li>JavaScript Essential Training</li>
-      <li>Git Essential Training</li>
-    </ul>
+          <h3 class="fw-semibold mt-5 mb-3 text-accent">
+            LinkedIn Learning Courses
+          </h3>
+          <div class="accordion" id="phase1Courses">
+            <div class="accordion-item bg-transparent border-accent mb-2">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#reactCourse">
+                  React Essential Training – Eve Porcello (5 h 0 m)
+                </button>
+              </h2>
+              <div
+                id="reactCourse"
+                class="accordion-collapse collapse"
+                data-bs-parent="#phase1Courses">
+                <div class="accordion-body glass-card">
+                  Build, render, and manage React components; work with props
+                  and state to create dynamic UI behaviors.
+                </div>
+              </div>
+            </div>
 
-    <h3>Milestone Project</h3>
-    <p>Recreate your Healthcare Playbook homepage using semantic HTML and flexbox. Commit each step to GitHub.</p>
-  </section>
-</body>
+            <div class="accordion-item bg-transparent border-accent">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#es6Course">
+                  Learning ECMAScript 6+ (ES6+) – Eve Porcello (2 h 15 m)
+                </button>
+              </h2>
+              <div
+                id="es6Course"
+                class="accordion-collapse collapse"
+                data-bs-parent="#phase1Courses">
+                <div class="accordion-body glass-card">
+                  Learn arrow functions, destructuring, modules, and classes to
+                  modernize your JavaScript and prepare for framework-based
+                  development.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h3 class="fw-semibold mt-5 mb-3 text-accent">Milestone Projects</h3>
+          <ul>
+            <li>
+              <strong>Project 1:</strong> Set up a React workspace using Vite or
+              Create React App and mirror your Healthcare Playbook folder
+              structure.
+            </li>
+            <li>
+              <strong>Project 2:</strong> Create a
+              <code>&lt;PersonaCard /&gt;</code> component that renders persona
+              details from a JSON file in the `/data/` directory.
+            </li>
+            <li>
+              <strong>Project 3:</strong> Build a reusable
+              <code>&lt;SolutionCard /&gt;</code> component and display a grid
+              using Bootstrap’s responsive columns.
+            </li>
+            <li>
+              <strong>Project 4:</strong> Deploy your first React build to
+              Vercel as a sandbox demo for KMBS stakeholders.
+            </li>
+          </ul>
+
+          <h3 class="fw-semibold mt-5 mb-3 text-accent">Mini Code Snippet</h3>
+          <div class="glass-card p-3 mb-4">
+            <pre><code>// components/PersonaCard.jsx
+import React from "react";
+
+export default function PersonaCard({ name, title, challenges }) {
+  return (
+    &lt;div className="card glass-card p-3 mb-3"&gt;
+      &lt;h5 className="text-accent"&gt;{name}&lt;/h5&gt;
+      &lt;p&gt;&lt;strong&gt;Role:&lt;/strong&gt; {title}&lt;/p&gt;
+      &lt;p&gt;&lt;strong&gt;Challenges:&lt;/strong&gt; {challenges.join(", ")}&lt;/p&gt;
+    &lt;/div&gt;
+  );
+}
+
+// Example usage in App.jsx
+&lt;PersonaCard 
+  name="CIO – Higher Education"
+  title="Technology Decision Maker"
+  challenges={["Integration", "Security", "Budget"]}
+/&gt;
+</code></pre>
+          </div>
+          <p>
+            This snippet demonstrates how to translate static persona HTML cards
+            into dynamic React components that pull data from JSON files or
+            APIs.
+          </p>
+
+          <h3 class="fw-semibold mt-5 mb-3 text-accent">
+            KMBS Application Context
+          </h3>
+          <p>
+            In Phase 1, you shift from static Bootstrap pages to modular React
+            components. Each component mirrors a playbook element (Persona,
+            Solution, Scenario) that can later connect to Supabase or other data
+            sources. This foundation makes your vertical playbooks dynamic,
+            searchable, and easily maintained by future developers.
+          </p>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="col-md-4">
+          <div class="card glass-card p-3 shadow-sm">
+            <h5 class="text-accent fw-bold">Phase Duration</h5>
+            <p>≈ 4 weeks (part-time)</p>
+            <h5 class="text-accent fw-bold">Primary Languages / Frameworks</h5>
+            <p>JavaScript (ES6+) · React · Bootstrap 5</p>
+            <h5 class="text-accent fw-bold">Repositories</h5>
+            <ul>
+              <li><code>fullstack-learning-playbook</code></li>
+              <li><code>playbook-react-refactor</code></li>
+            </ul>
+            <a href="../index.html" class="btn btn-outline-accent mt-3"
+              >← Back to Overview</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="text-center py-4 text-light-50">
+      <small>© 2025 Bradley Pierce | Full-Stack Learning Playbook</small>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>

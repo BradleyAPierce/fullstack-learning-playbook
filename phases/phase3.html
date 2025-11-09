@@ -1,58 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Phase 3 - Database & API Integration | Fullstack Learning Playbook</title>
-    <link rel="stylesheet" href="../assets/css/style.css">
-</head>
-<body>
-    <header>
-        <h1>Fullstack Learning Playbook</h1>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="phase0.html">Phase 0</a></li>
-                <li><a href="phase1.html">Phase 1</a></li>
-                <li><a href="phase2.html">Phase 2</a></li>
-                <li><a href="phase3.html" class="active">Phase 3</a></li>
-                <li><a href="phase4.html">Phase 4</a></li>
-            </ul>
-        </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phase 3 – Full-Stack Integration & Deployment</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="../index.html"
+          >Full-Stack Learning Playbook</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="phase0.html">Phase 0</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="phase1.html">Phase 1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="phase2.html">Phase 2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="phase3.html">Phase 3</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="phase4.html">Phase 4</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <header
+      class="text-center text-white py-5 mb-4"
+      style="background: linear-gradient(135deg, #0a192f, #112240)">
+      <div class="container">
+        <h1 class="fw-bold text-accent">
+          Phase 3 : Full-Stack Integration & Deployment
+        </h1>
+        <p class="lead">
+          Combine front-end, back-end, and database layers into a live
+          full-stack application using Next.js and Supabase.
+        </p>
+      </div>
     </header>
 
-    <main>
-        <article class="phase-content">
-            <h2>Phase 3: Database & API Integration</h2>
-            <p>Connect your applications to databases and integrate external APIs.</p>
+    <!-- Breadcrumb -->
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb container">
+        <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+        <li class="breadcrumb-item active">Phase 3</li>
+      </ol>
+    </nav>
 
-            <section class="phase-section">
-                <h3>What You'll Learn</h3>
-                <ul>
-                    <li>SQL databases (PostgreSQL, MySQL)</li>
-                    <li>NoSQL databases (MongoDB)</li>
-                    <li>ORMs and database design</li>
-                    <li>API integration</li>
-                    <li>Data modeling and relationships</li>
-                </ul>
-            </section>
+    <!-- Content -->
+    <section class="container mb-5">
+      <div class="row">
+        <!-- Main -->
+        <div class="col-md-8">
+          <h2 class="text-accent fw-semibold mb-3">Technical Objectives</h2>
+          <ul>
+            <li>
+              Integrate your React front-end with Node.js APIs and a Supabase
+              database.
+            </li>
+            <li>
+              Learn server-side rendering (SSR) and static site generation (SSG)
+              in Next.js.
+            </li>
+            <li>
+              Implement authentication, routing, and real-time data using
+              Supabase APIs.
+            </li>
+            <li>
+              Deploy full-stack builds to Vercel with environment variables and
+              build settings.
+            </li>
+            <li>
+              Understand foundational DevOps concepts in preparation for Phase 4
+              automation.
+            </li>
+          </ul>
 
-            <section class="phase-section">
-                <h3>Resources</h3>
-                <p>Additional learning materials and exercises will be added here.</p>
-            </section>
-        </article>
+          <h3 class="fw-semibold mt-5 mb-3 text-accent">
+            LinkedIn Learning Courses
+          </h3>
+          <div class="accordion" id="phase3Courses">
+            <div class="accordion-item bg-transparent border-accent mb-2">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#nextCourse">
+                  Next.js Essential Training – Jemima Abu (3 h 45 m)
+                </button>
+              </h2>
+              <div
+                id="nextCourse"
+                class="accordion-collapse collapse"
+                data-bs-parent="#phase3Courses">
+                <div class="accordion-body glass-card">
+                  Learn routing, data fetching, and deployment workflows using
+                  Next.js — the framework powering your integrated playbook
+                  apps.
+                </div>
+              </div>
+            </div>
 
-        <nav class="phase-navigation">
-            <a href="phase2.html" class="btn">← Previous: Phase 2</a>
-            <a href="phase4.html" class="btn btn-next">Next: Phase 4 →</a>
-        </nav>
-    </main>
+            <div class="accordion-item bg-transparent border-accent">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#supabaseCourse">
+                  Building Apps with Supabase – Nic Jackson (2 h 30 m)
+                </button>
+              </h2>
+              <div
+                id="supabaseCourse"
+                class="accordion-collapse collapse"
+                data-bs-parent="#phase3Courses">
+                <div class="accordion-body glass-card">
+                  Explore Supabase for real-time databases, authentication, and
+                  API endpoints — connecting your React UI to a live back-end
+                  service.
+                </div>
+              </div>
+            </div>
+          </div>
 
-    <footer>
-        <p>&copy; 2025 Fullstack Learning Playbook. All rights reserved.</p>
+          <h3 class="fw-semibold mt-5 mb-3 text-accent">Milestone Projects</h3>
+          <ul>
+            <li>
+              <strong>Project 1:</strong> Create a Next.js app that connects to
+              Supabase for persona and solution data.
+            </li>
+            <li>
+              <strong>Project 2:</strong> Convert React components into dynamic
+              pages using <code>getServerSideProps</code> or
+              <code>getStaticProps</code>.
+            </li>
+            <li>
+              <strong>Project 3:</strong> Securely manage keys with
+              <code>.env.local</code> and deploy to Vercel.
+            </li>
+            <li>
+              <strong>Project 4:</strong> Set up preview deployments for
+              stakeholder feedback before production.
+            </li>
+          </ul>
+
+          <h3 class="fw-semibold mt-5 mb-3 text-accent">Mini Code Snippet</h3>
+          <div class="glass-card p-3 mb-4">
+            <pre><code>// pages/personas.jsx
+import { createClient } from "@supabase/supabase-js";
+
+export async function getServerSideProps() {
+  const supabase = createClient(
+    process.env.NEXT_PUBLIC_SUPABASE_URL,
+    process.env.SUPABASE_ANON_KEY
+  );
+  const { data: personas } = await supabase.from("personas").select("*");
+  return { props: { personas } };
+}
+
+export default function Personas({ personas }) {
+  return (
+    &lt;div className="container"&gt;
+      &lt;h2 className="text-accent"&gt;Persona List&lt;/h2&gt;
+      {personas.map(p =&gt; (
+        &lt;div key={p.id} className="card glass-card p-3 mb-3"&gt;
+          &lt;h5&gt;{p.name}&lt;/h5&gt;
+          &lt;p&gt;{p.title}&lt;/p&gt;
+        &lt;/div&gt;
+      ))}
+    &lt;/div&gt;
+  );
+}
+</code></pre>
+          </div>
+
+          <p>
+            This example shows how to fetch live data from Supabase inside a
+            Next.js page using server-side rendering — the same approach you’ll
+            use when transitioning your playbooks to live, database-driven
+            modules.
+          </p>
+
+          <h3 class="fw-semibold mt-5 mb-3 text-accent">
+            KMBS Application Context
+          </h3>
+          <p>
+            Phase 3 connects every layer of your tech stack. Your React
+            components, back-end APIs, and Supabase database now function
+            together as a single system deployed on Vercel. This integration
+            enables real-time updates, modular scalability, and a foundation for
+            automated workflows introduced in Phase 4.
+          </p>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="col-md-4">
+          <div class="card glass-card p-3 shadow-sm">
+            <h5 class="text-accent fw-bold">Phase Duration</h5>
+            <p>≈ 5 weeks (part-time)</p>
+            <h5 class="text-accent fw-bold">Primary Stack</h5>
+            <p>Next.js · Supabase · Node.js · Vercel</p>
+            <h5 class="text-accent fw-bold">Repositories</h5>
+            <ul>
+              <li><code>playbook-next-supabase</code></li>
+              <li><code>fullstack-learning-playbook</code></li>
+            </ul>
+            <a href="../index.html" class="btn btn-outline-accent mt-3"
+              >← Back to Overview</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="text-center py-4 text-light-50">
+      <small>© 2025 Bradley Pierce | Full-Stack Learning Playbook</small>
     </footer>
 
-    <script src="../assets/js/main.js"></script>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>

@@ -1,59 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Phase 4 - Advanced Topics & Deployment | Fullstack Learning Playbook</title>
-    <link rel="stylesheet" href="../assets/css/style.css">
-</head>
-<body>
-    <header>
-        <h1>Fullstack Learning Playbook</h1>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="phase0.html">Phase 0</a></li>
-                <li><a href="phase1.html">Phase 1</a></li>
-                <li><a href="phase2.html">Phase 2</a></li>
-                <li><a href="phase3.html">Phase 3</a></li>
-                <li><a href="phase4.html" class="active">Phase 4</a></li>
-            </ul>
-        </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phase 4 – Professional Workflow & Automation</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="../index.html"
+          >Full-Stack Learning Playbook</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="phase0.html">Phase 0</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="phase1.html">Phase 1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="phase2.html">Phase 2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="phase3.html">Phase 3</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="phase4.html">Phase 4</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <header
+      class="text-center text-white py-5 mb-4"
+      style="background: linear-gradient(135deg, #0a192f, #112240)">
+      <div class="container">
+        <h1 class="fw-bold text-accent">
+          Phase 4 : Professional Workflow & Automation
+        </h1>
+        <p class="lead">
+          Automate, document, and professionalize your full-stack development
+          process through CI/CD, testing, and DevOps best practices.
+        </p>
+      </div>
     </header>
 
-    <main>
-        <article class="phase-content">
-            <h2>Phase 4: Advanced Topics & Deployment</h2>
-            <p>Master advanced concepts and learn how to deploy your applications.</p>
+    <!-- Breadcrumb -->
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb container">
+        <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+        <li class="breadcrumb-item active">Phase 4</li>
+      </ol>
+    </nav>
 
-            <section class="phase-section">
-                <h3>What You'll Learn</h3>
-                <ul>
-                    <li>Testing (Unit, Integration, E2E)</li>
-                    <li>CI/CD pipelines</li>
-                    <li>Cloud deployment (AWS, Azure, Heroku)</li>
-                    <li>Docker & containerization</li>
-                    <li>Performance optimization</li>
-                    <li>Security best practices</li>
-                </ul>
-            </section>
+    <!-- Content -->
+    <section class="container mb-5">
+      <div class="row">
+        <!-- Main -->
+        <div class="col-md-8">
+          <h2 class="text-accent fw-semibold mb-3">Technical Objectives</h2>
+          <ul>
+            <li>
+              Implement CI/CD pipelines using GitHub Actions or Vercel Deploy
+              Hooks.
+            </li>
+            <li>
+              Automate testing, linting, and build workflows for production
+              reliability.
+            </li>
+            <li>
+              Adopt Git branching strategies (feature, release, hotfix models).
+            </li>
+            <li>
+              Write developer documentation and automated release notes in
+              Markdown.
+            </li>
+            <li>Establish monitoring and continuous improvement practices.</li>
+          </ul>
 
-            <section class="phase-section">
-                <h3>Resources</h3>
-                <p>Additional learning materials and exercises will be added here.</p>
-            </section>
-        </article>
+          <h3 class="fw-semibold mt-5 mb-3 text-accent">
+            LinkedIn Learning Course
+          </h3>
+          <div class="accordion" id="phase4Courses">
+            <div class="accordion-item bg-transparent border-accent">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#devOpsCourse">
+                  DevOps Foundations – Ernest Mueller (2 h 45 m)
+                </button>
+              </h2>
+              <div
+                id="devOpsCourse"
+                class="accordion-collapse collapse"
+                data-bs-parent="#phase4Courses">
+                <div class="accordion-body glass-card">
+                  Learn how CI/CD pipelines, version control strategies, and
+                  release automation enable faster and more reliable software
+                  delivery across teams.
+                </div>
+              </div>
+            </div>
+          </div>
 
-        <nav class="phase-navigation">
-            <a href="phase3.html" class="btn">← Previous: Phase 3</a>
-            <a href="../index.html" class="btn">Back to Home</a>
-        </nav>
-    </main>
+          <h3 class="fw-semibold mt-5 mb-3 text-accent">Milestone Projects</h3>
+          <ul>
+            <li>
+              <strong>Project 1:</strong> Create a GitHub Actions workflow to
+              build and test your Next.js/Supabase app on every commit to
+              <code>main</code>.
+            </li>
+            <li>
+              <strong>Project 2:</strong> Add test coverage using Jest and
+              generate automated status badges for your README.
+            </li>
+            <li>
+              <strong>Project 3:</strong> Automate deployment to Vercel via API
+              tokens and environment secrets.
+            </li>
+            <li>
+              <strong>Project 4:</strong> Document your repository with a
+              professional README, CHANGELOG, and SPEC file.
+            </li>
+          </ul>
 
-    <footer>
-        <p>&copy; 2025 Fullstack Learning Playbook. All rights reserved.</p>
-    </footer>
+          <h3 class="fw-semibold mt-5 mb-3 text-accent">Mini Code Snippet</h3>
+          <div class="glass-card p-3 mb-4">
+            <pre><code># .github/workflows/deploy.yml
+name: Build & Deploy
+on:
+  push:
+    branches: [ "main" ]
 
-    <script src="../assets/js/main.js"></script>
-</body>
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Run Tests
+        run: npm test
+
+      - name: Build App
+        run: npm run build
+
+      - name: Deploy to Vercel
+        run: npx vercel --prod --token=${{ secrets.VERCEL_TOKEN }}
+</code></pre>
+          </div>
+
+          <p>
+            This GitHub Actions workflow automates your entire pipeline —
+            testing, building, and deploying your application whenever code is
+            pushed to the <code>main</code> branch. It creates a professional,
+            hands-free deployment loop aligned with modern DevOps standards.
+          </p>
+
+          <h3 class="fw-semibold mt-5 mb-3 text-accent">
+            KMBS Application Context
+          </h3>
+          <p>
+            Phase 4 elevates your Konica Minolta Playbooks from functional apps
+            to maintainable enterprise systems. Automated builds and deployments
+            ensure that updates to sales content or AI assistant logic can go
+            live instantly. Standardized branching and documentation make it
+            easy for future developers to collaborate and extend your work.
+          </p>
+
+          <h3 class="fw-semibold mt-5 mb-3 text-accent">
+            Next Steps & Continuous Growth
+          </h3>
+          <ul>
+            <li>
+              Explore Docker and containerization for cross-environment
+              deployments.
+            </li>
+            <li>
+              Integrate monitoring tools like Sentry or New Relic for real-time
+              tracking.
+            </li>
+            <li>
+              Refine documentation into a portfolio case study hosted on Vercel
+              or GitHub Pages.
+            </li>
+          </ul>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="col-md-4"></div>
+      </div>
+    </section>
+  </body>
 </html>

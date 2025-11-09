@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phase 5 – Portfolio Launch & Continuous Growth</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="../index.html"
+          >Full-Stack Learning Playbook</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="phase0.html">Phase 0</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="phase1.html">Phase 1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="phase2.html">Phase 2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="phase3.html">Phase 3</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="phase4.html">Phase 4</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="phase5.html">Phase 5</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <header
+      class="text-center text-white py-5 mb-4"
+      style="background: linear-gradient(135deg, #0a192f, #112240)">
+      <div class="container">
+        <h1 class="fw-bold text-accent">
+          Phase 5 : Portfolio Launch & Continuous Growth
+        </h1>
+        <p class="lead">
+          Showcase your full-stack journey, share your learning impact, and
+          continue evolving your skills as a professional developer.
+        </p>
+      </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb container">
+        <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+        <li class="breadcrumb-item active">Phase 5</li>
+      </ol>
+    </nav>
+
+    <!-- Content -->
+    <section class="container mb-5">
+      <div class="row">
+        <!-- Main -->
+        <div class="col-md-8">
+          <h2 class="text-accent fw-semibold mb-3">Objectives</h2>
+          <ul>
+            <li>
+              Consolidate your completed projects into a professional portfolio.
+            </li>
+            <li>
+              Publish your Full-Stack Learning Playbook as a live web app.
+            </li>
+            <li>
+              Create documentation and video walk-throughs for each phase.
+            </li>
+            <li>Prepare for technical interviews and code reviews.</li>
+            <li>
+              Present your roadmap as a business case to Konica Minolta
+              executives.
+            </li>
+          </ul>
+
+          <h3 class="fw-semibold mt-5 mb-3 text-accent">
+            Portfolio Launch Checklist
+          </h3>
+          <div class="glass-card p-4 mb-4">
+            <ul>
+              <li>
+                ✅ Deploy your <code>fullstack-learning-playbook</code> site to
+                Vercel or GitHub Pages.
+              </li>
+              <li>
+                ✅ Include your project case studies:
+                <em
+                  >Healthcare Playbook, React Conversion, Supabase Integration,
+                  CI/CD Automation</em
+                >.
+              </li>
+              <li>
+                ✅ Link your GitHub, LinkedIn, and bradleypierce.ai domain
+                portfolio.
+              </li>
+              <li>
+                ✅ Add a short “developer story” video introduction to your
+                About page.
+              </li>
+              <li>✅ Embed Google Analytics 4 to measure engagement.</li>
+            </ul>
+          </div>
+
+          <h3 class="fw-semibold mt-5 mb-3 text-accent">Mini Code Snippet</h3>
+          <div class="glass-card p-3 mb-4">
+            <pre><code>// Example: Auto-link your repo stars to your portfolio
+fetch("https://api.github.com/users/BradleyAPierce/repos")
+  .then(response =&gt; response.json())
+  .then(data =&gt; {
+    const repoList = document.getElementById("repo-list");
+    data.forEach(repo =&gt; {
+      if (!repo.fork) {
+        const item = document.createElement("li");
+        item.innerHTML = `⭐ &lt;a href="${repo.html_url}" target="_blank"&gt;${repo.name}&lt;/a&gt; – ${repo.stargazers_count} stars`;
+        repoList.appendChild(item);
+      }
+    });
+  });
+</code></pre>
+          </div>
+
+          <p>
+            This lightweight script dynamically fetches your GitHub repositories
+            and displays them with live star counts — a simple but elegant way
+            to showcase your active development footprint directly inside your
+            portfolio.
+          </p>
+
+          <h3 class="fw-semibold mt-5 mb-3 text-accent">
+            KMBS Application Context
+          </h3>
+          <p>
+            Phase 5 represents the translation of your technical growth into
+            strategic business impact. Your published portfolio will demonstrate
+            to Konica Minolta executives how learning investments in full-stack
+            development and AI integration directly empower the creation of
+            smarter, scalable sales enablement ecosystems.
+          </p>
+
+          <h3 class="fw-semibold mt-5 mb-3 text-accent">Continuous Growth</h3>
+          <ul>
+            <li>
+              Explore frameworks like Astro, Remix, and Next.js 15 for
+              future-ready apps.
+            </li>
+            <li>
+              Begin learning TypeScript to strengthen code quality and
+              maintainability.
+            </li>
+            <li>
+              Contribute to open-source projects that align with sales
+              enablement or AI training tools.
+            </li>
+            <li>
+              Develop internal workshops to help peers understand modular React
+              and Supabase workflows.
+            </li>
+          </ul>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="col-md-4">
+          <div class="card glass-card p-3 shadow-sm">
+            <h5 class="text-accent fw-bold">Phase Duration</h5>
+            <p>≈ 2 weeks (part-time)</p>
+            <h5 class="text-accent fw-bold">Deliverables</h5>
+            <ul>
+              <li>Deployed Portfolio</li>
+              <li>Case Study Writeups</li>
+              <li>KMBS Presentation Deck</li>
+            </ul>
+            <h5 class="text-accent fw-bold">Repositories</h5>
+            <ul id="repo-list">
+              <li><code>fullstack-learning-playbook</code></li>
+              <li><code>playbook-portfolio</code></li>
+            </ul>
+            <a href="../index.html" class="btn btn-outline-accent mt-3"
+              >← Back to Overview</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="text-center py-4 text-light-50">
+      <small>© 2025 Bradley Pierce | Full-Stack Learning Playbook</small>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
