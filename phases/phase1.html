@@ -79,7 +79,7 @@
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#reactCourse">
-                  React Essential Training – Eve Porcello (5 h 0 m)
+                  React Virtual Training - Eve Porcello (5 h 0 m)
                 </button>
               </h2>
               <div
@@ -209,5 +209,49 @@ export default function PersonaCard({ name, title, challenges }) {
 
     <script src="../assets/js/include.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        fetch("../assets/json/linkedincoursedescriptions.json")
+          .then((response) => response.json())
+          .then((courses) => {
+            // Map course names to accordion IDs in Phase 1
+            const courseMap = {
+              "React Virtual Training": "reactCourse",
+              "Learning ECMAScript 6+": "es6Course",
+            };
+
+            courses.forEach((course) => {
+              Object.keys(courseMap).forEach((key) => {
+                if (course.courseName && course.courseName.startsWith(key)) {
+                  const accordionBody = document.querySelector(
+                    `#${courseMap[key]} .accordion-body`
+                  );
+                  if (accordionBody) {
+                    accordionBody.innerHTML = `
+                <strong>${course.courseName}</strong><br>
+                <em>Author:</em> ${course.author || ""}<br>
+                <em>Duration:</em> ${course.learningTime || ""}<br>
+                <p>${course.description || ""}</p>
+                ${
+                  course.learningObjectives && course.learningObjectives.length
+                    ? `<ul>${course.learningObjectives
+                        .map((obj) => `<li>${obj}</li>`)
+                        .join("")}</ul>`
+                    : ""
+                }
+                ${
+                  course.url
+                    ? `<a href="${course.url}" target="_blank">View Course</a>`
+                    : ""
+                }
+              `;
+                  }
+                }
+              });
+            });
+          });
+      });
+    </script>
   </body>
 </html>

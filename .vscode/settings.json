@@ -1,0 +1,7 @@
+{
+  "chat.checkpoints.showFileChanges": false,
+  "chat.editor.fontSize": 13,
+  "chat.editor.wordWrap": "on",
+  "chat.emptyState.history.enabled": true,
+  "chat.extensionUnification.enabled": true
+}

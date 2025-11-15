@@ -1,13 +1,13 @@
 Full Stack Course Descriptions
 
-CSS Essential Training (2023)
+Course Name: CSS Essential Training (2023)
 URL Path: https://www.linkedin.com/learning/css-essential-training-2023?contextUrn=urn%3Ali%3AlyndaLearningPath%3A56d7aa033dd559b764b88a93&u=0
 Platform: LinkedIn
 Author: Christina Truong
 Learning Time: 5h 26m
 Cascading Style Sheets (CSS) is a stylesheet language that allows you to control the appearance of your webpages. In this hands-on course, instructor Christina Truong demonstrates the concepts that form the foundation of CSS, explaining what you need to know to tweak existing CSS and start writing your own with ease. Christina explains how to add colors and other design elements to take your webpages beyond just black text on a white background. She shows how to use selectors, how the box model defines the spacing and sizing of page elements, and how to style text and manage basic layouts with Flexbox and Grid. Learn the basics of working with typography, creating fluid and responsive layouts, and determining when to use the float and position properties. Along the way, test out your know-how with real-world projects that let you practice applying new content and skills.
 
-JavaScript Essential Training
+Course Name: JavaScript Essential Training
 URL Path: https://www.linkedin.com/learning/javascript-essential-training?contextUrn=urn%3Ali%3AlyndaLearningPath%3A56d7aa033dd559b764b88a93&u=0
 Platform: LinkedIn
 Author: Morten Rand-Hendriksen
@@ -15,7 +15,7 @@ Learning Time: 6h 14m
 JavaScript is a scripting language of the web. As the web evolves from a static to a dynamic environment, technology focus is shifting from static markup and styling to dynamic interfaces and advanced interaction. Once seen as optional, JavaScript is now becoming an integral part of the web, infusing every layer with its script.
 This course includes Code Challenges powered by CoderPad. Code Challenges are interactive coding exercises with real-time feedback, so you can get hands-on coding practice alongside the course content to advance your programming skills. Instructor Morten Rand-Hendriksen helps you build your understanding of JavaScript piece by piece, from core principles like variables, data types, conditionals, and functions through advanced topics including loops, and DOM scripting.
 
-HTML Essential Training
+Course Name: HTML Essential Training
 URL Path: https://www.linkedin.com/learning/html-essential-training-22425519?contextUrn=urn%3Ali%3AlyndaLearningPath%3A56d7aa033dd559b764b88a93&u=0
 Platform: LinkedIn
 Author: Christina Truong
@@ -27,13 +27,15 @@ Define the syntax and terminology of HTML.
 Build the document structure of a webpage using semantic HTML elements and attributes.
 List ways to create media and format content to optimize for different screen sizes and devices.
 Create a basic webform for functionality and accessibility.
-Search Procedures for Web Developers
+
+Course Name: Search Procedures for Web Developers
 URL Path: https://www.linkedin.com/learning/search-techniques-for-web-developers?contextUrn=urn%3Ali%3AlyndaLearningPath%3A56d7aa033dd559b764b88a93&u=0
 Platform: LinkedIn
 Author: Morten Rand-Hendriksen
 Learning Time: 55m
 Effective search skills are often a key part of programming talent. In this course, instructor Morten Rand-Hendriksen highlights several search techniques that you, as a web developer, need to know. Morten begins by explaining where to find reliable information. He goes over several possibilities, including the original source, platform resources, status reference sites, and community resources. Next, Morten shows you how to master searches with search techniques for Google, other search engines, internal site searches, and GitHub. He concludes with a discussion of the developers behind every line of code and how you can enrich your searches for information through participating in and contributing to online communities.
-Learning ECMAScript 6+ (ES6+)
+
+Course Name: Learning ECMAScript 6+ (ES6+)
 URL Path: https://www.linkedin.com/learning/learning-ecmascript-6-plus-es6-plus?contextUrn=urn%3Ali%3AlyndaLearningPath%3A56d7aa033dd559b764b88a93&u=0
 Platform: LinkedIn
 Author: Eve Porcello
@@ -53,14 +55,16 @@ Getting and setting class values
 Using ECMAScript functions
 Building and returning promises
 Using async/await syntax
-Git Essential Training
+
+Course Name: Git Essential Training
 URL Path: https://www.linkedin.com/learning/git-essential-training-25677984?contextUrn=urn%3Ali%3AlyndaLearningPath%3A56d7aa033dd559b764b88a93&u=0
 Platform: LinkedIn
 Author: Barbara Forbes
 Learning Time: 1h 42m
 If you’ve ever wondered why someone should use Git or how to use it for version control, this is a great course to get started. Join Azure MVP and GitHub Star Barbara Forbes as she guides you through the installation process, the Git workflow, setting up and pushing code into a repo, and committing changes, all with a focus on version control and how Git can help you achieve it. Find out why people use Git. Learn how Git works, locally or through a provider, and how you can get it installed, configured, and running the way you need it to work. Follow the full process of pushing your code with Git, then explore ways to make changes to files. Discover important concepts in Git, like how to ignore files you don’t want to include, how branching and merging can help you with development, what should be in a commit, and how to troubleshoot common errors.
 This course is integrated with GitHub Codespaces, an instant cloud developer environment that offers all the functionality of your favorite IDE without the need for any local machine setup. With GitHub Codespaces, you can get hands-on practice from any machine, at any time—all while using a tool that you’ll likely encounter in the workplace. Check out “Using GitHub Codespaces" with this course to learn how to get started.
-React Virtual Training
+
+Course Name: React Virtual Training
 URL Path: https://www.linkedin.com/learning/react-essential-training?contextUrn=urn%3Ali%3AlyndaLearningPath%3A56d7aa033dd559b764b88a93&u=0
 Platform: LinkedIn
 Author: Eve Porcello
@@ -77,7 +81,8 @@ Design and implement server-side actions in Next.js to handle form submissions a
 Build responsive and visually appealing user interfaces with integrated Tailwind CSS for styling React components.
 Convert and manage server components versus client components in Next.js to optimize rendering performance and achieve interactive functionality.
 Understand and apply advanced concepts in Next.js, such as caching mechanisms, React server components, and comprehensive data storage options.
-Node.js Essential Training
+
+Course Name: Node.js Essential Training
 URL Path: https://www.linkedin.com/learning/node-js-essential-training-14888164?contextUrn=urn%3Ali%3AlyndaLearningPath%3A56d7aa033dd559b764b88a93&u=0
 Platform: LinkedIn
 Author: Eve Porcello
@@ -94,7 +99,8 @@ Apply the principles of the CommonJS module system to structure and reuse code i
 Utilize the EventEmitter module to handle custom events and asynchronous processes in Node.js.
 Implement the readline module to interact with users via command-line interfaces.
 Explore and use the different timing functions in Node.js to handle asynchronous operations.
-SQL Essential Training
+
+Course Name: SQL Essential Training
 URL Path: https://www.linkedin.com/learning/sql-essential-training-20685933?contextUrn=urn%3Ali%3AlyndaLearningPath%3A56d7aa033dd559b764b88a93&u=0
 Platform: LinkedIn
 Author: Walter Shields
@@ -109,13 +115,15 @@ Explain how to use inner, left, and right `JOIN` clauses.
 Show how to organize results by group.
 Explain how to use aggregate queries.
 Demonstrate and explain the utility of views for data analysis.
-NoSQL Essential Training
+
+Course Name: NoSQL Essential Training
 URL Path: https://www.linkedin.com/learning/nosql-essential-training?contextUrn=urn%3Ali%3AlyndaLearningPath%3A56d7aa033dd559b764b88a93&u=0
 Platform: LinkedIn
 Author: Melanie McGee
 Learning Time: 45m
 As the shiny new object in the data world, you might have heard a lot of people talk excitedly about NoSQL and all the things it can do. It’s great in terms of flexibility, speed, and is easy to work with. It’s super scalable, so it can accommodate increased numbers of users as websites and applications grow. But will it replace SQL? Will it make relational databases obsolete? In this course, Mel McGee explains just exactly what NoSQL is, the pros and cons, and tradeoffs you’ll make when using NoSQL. Mel takes a high-level approach without delving into the details of any one NoSQL query language or solution, so if you’re a developer looking for a bigger picture of NoSQL, or an entrepreneur wanting to explore options for your product, or just plain curious about non-relational databases, this course is for you.
-Learning REST APIs
+
+Course Name: Learning REST APIs
 URL Path: https://www.linkedin.com/learning/learning-rest-apis?contextUrn=urn%3Ali%3AlyndaLearningPath%3A56d7aa033dd559b764b88a93&u=0
 Platform: LinkedIn
 Author: Morten Rand-Hendriksen
@@ -128,7 +136,8 @@ Anatomy of a REST request
 HTTP status messages
 Request/response pairs
 GET, POST, and DELETE
-DevOps Foundations
+
+Course Name: DevOps Foundations
 URL Path: https://www.linkedin.com/learning/devops-foundations-23454205?contextUrn=urn%3Ali%3AlyndaLearningPath%3A56d7aa033dd559b764b88a93&u=0
 Platform: LinkedIn
 Author: Ernest Mueller and James Wickett
