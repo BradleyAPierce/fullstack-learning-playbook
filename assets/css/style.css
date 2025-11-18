@@ -1,40 +1,47 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
 
 :root {
-  --primary-bg: #0a192f;
-  --secondary-bg: #112240;
-  --accent: #64ffda;
-  --text-light: #e6f1ff;
+  --color-navy-900: #0a1a2f;
+  --color-navy-700: #1a2e45;
+  --color-maroon-700: #7a1e30;
+  --color-maroon-500: #a8323c;
+  --color-tan-400: #d8c7a3;
+  --color-tan-300: #ede3c7;
+  --color-silver-200: #e8ecef;
+  --color-silver-400: #bcc3c7;
+  --color-gray-600: #6e7a86;
+
+  --text-primary: #0b0e11;
+  --text-heading: #1d2935;
+  --text-muted: #6e7a86;
+  --text-on-dark: #ffffff;
+
+  --bg-page: var(--color-silver-200);
+  --bg-card: #ffffff;
+  --bg-navbar: var(--color-navy-900);
+  --btn-primary-bg: var(--color-maroon-700);
+  --btn-primary-hover: var(--color-maroon-500);
 }
 
 body {
-  background: var(--primary-bg);
-  color: var(--text-light);
+  background: var(--bg-page);
+  color: var(--text-primary);
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
 }
 
 /* ---------- Hero ---------- */
+/* ---------- Hero ---------- */
 .hero {
   position: relative;
   min-height: 100vh;
-  background: linear-gradient(135deg, #0a192f, #112240);
+  background: var(--color-tan-300);
   overflow: hidden;
 }
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: radial-gradient(
-      circle at 30% 50%,
-      rgba(100, 255, 218, 0.08),
-      transparent 70%
-    ),
-    radial-gradient(
-      circle at 70% 40%,
-      rgba(100, 255, 218, 0.05),
-      transparent 80%
-    );
-  animation: float 10s infinite alternate ease-in-out;
+  background: none;
 }
 @keyframes float {
   from {
@@ -45,27 +52,29 @@ body {
   }
 }
 .btn-outline-light {
-  border-color: var(--accent);
-  color: var(--accent);
+  border-color: var(--color-navy-700);
+  color: var(--color-navy-700);
 }
 .btn-outline-light:hover {
-  background: var(--accent);
-  color: var(--primary-bg);
+  background: var(--color-navy-700);
+  color: #fff;
 }
 
 /* ---------- Timeline ---------- */
+
 .timeline-section {
   position: relative;
-  background: var(--secondary-bg);
+  background: var(--color-tan-400);
 }
 .text-accent {
-  color: var(--accent);
+  color: var(--color-maroon-700);
 }
 
 .timeline-wrapper {
   position: relative;
   max-width: 700px;
 }
+
 .timeline-line {
   position: absolute;
   top: 0;
@@ -73,23 +82,7 @@ body {
   transform: translateX(-50%);
   width: 4px;
   height: 100%;
-  background: linear-gradient(
-    180deg,
-    rgba(100, 255, 218, 0.2),
-    rgba(100, 255, 218, 0.6)
-  );
-  animation: glowline 4s linear infinite;
-}
-@keyframes glowline {
-  0% {
-    box-shadow: 0 0 10px rgba(100, 255, 218, 0.4);
-  }
-  50% {
-    box-shadow: 0 0 25px rgba(100, 255, 218, 0.9);
-  }
-  100% {
-    box-shadow: 0 0 10px rgba(100, 255, 218, 0.4);
-  }
+  background: var(--color-silver-400);
 }
 .timeline-item {
   position: relative;
@@ -103,18 +96,8 @@ body {
   width: 22px;
   height: 22px;
   border-radius: 50%;
-  background: var(--accent);
-  box-shadow: 0 0 20px var(--accent), 0 0 40px rgba(100, 255, 218, 0.5);
-  animation: pulse 3s infinite;
-}
-@keyframes pulse {
-  0%,
-  100% {
-    box-shadow: 0 0 10px var(--accent);
-  }
-  50% {
-    box-shadow: 0 0 25px var(--accent);
-  }
+  background: var(--color-maroon-700);
+  box-shadow: 0 0 8px var(--color-maroon-500);
 }
 .timeline-content {
   margin-top: 1.5rem;
@@ -122,53 +105,49 @@ body {
   width: 80%;
   margin-left: 10%;
   border-radius: 16px;
+  background: var(--bg-card);
+  color: var(--text-primary);
+  border: 1px solid var(--color-silver-200);
 }
 .glass-card {
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(100, 255, 218, 0.3);
-  backdrop-filter: blur(12px);
+  background: var(--bg-card);
+  border: 1px solid var(--color-silver-200);
+  color: var(--text-primary);
+  box-shadow: 0 2px 8px rgba(186, 195, 199, 0.08);
   transition: transform 0.3s, box-shadow 0.3s;
 }
 .glass-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 0 25px rgba(100, 255, 218, 0.3);
+  box-shadow: 0 0 16px var(--color-maroon-500);
 }
 .btn-outline-accent {
-  color: var(--accent);
-  border-color: var(--accent);
+  color: var(--color-maroon-700);
+  border-color: var(--color-maroon-700);
 }
 .btn-outline-accent:hover {
-  background: var(--accent);
-  color: var(--primary-bg);
+  background: var(--color-maroon-700);
+  color: #fff;
 }
 footer {
-  background: var(--secondary-bg);
-  border-top: 1px solid rgba(100, 255, 218, 0.2);
-  color: rgba(230, 241, 255, 0.6);
+  background: var(--color-tan-400);
+  border-top: 1px solid var(--color-silver-400);
+  color: var(--text-muted);
 }
 
 /* Fix for dark backgrounds in glass cards and accordions */
-.glass-card,
-.glass-card p,
-.glass-card li,
-.glass-card .accordion-body {
-  color: var(--text-light) !important;
-}
 
 /* Accordion text color fix */
+
 .accordion-button {
-  color: var(--text-light);
-  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-heading);
+  background: var(--color-tan-300);
 }
 .accordion-button:not(.collapsed) {
-  color: var(--accent);
-  background: rgba(255, 255, 255, 0.08);
+  color: var(--color-maroon-700);
+  background: var(--color-tan-400);
 }
 
 /* Sidebar text */
-.card.glass-card {
-  color: var(--text-light);
-}
 
 /* ---- Fade-In + Slide Animation for Cards ---- */
 @keyframes fadeSlideUp {
@@ -209,13 +188,15 @@ footer {
 }
 
 /* Optional: subtle hover lift */
+
 .card.glass-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(0, 255, 255, 0.15);
+  box-shadow: 0 0 16px var(--color-maroon-500);
   transition: all 0.3s ease;
 }
 
 /* Animate-on-scroll (inactive by default) */
+
 .glass-card {
   opacity: 0;
   transform: translateY(40px);
@@ -223,93 +204,77 @@ footer {
 }
 
 /* When scrolled into view */
+
 .glass-card.animate-visible {
   opacity: 1;
   transform: translateY(0);
 }
 
 /* ---- Breadcrumb Styling Fix ---- */
+
 .breadcrumb {
   background: transparent;
   margin-bottom: 1.5rem;
 }
-
 .breadcrumb a {
-  color: var(--accent);
+  color: var(--color-navy-700);
   text-decoration: none;
 }
-
 .breadcrumb a:hover {
-  color: #64ffda;
+  color: var(--color-maroon-700);
   text-decoration: underline;
 }
-
 .breadcrumb-item.active {
-  color: var(--text-light) !important;
+  color: var(--text-heading) !important;
 }
 
 /* ---- Custom Breadcrumb Divider (›) ---- */
+
 .breadcrumb-item + .breadcrumb-item::before {
-  content: "›"; /* replaces the default "/" divider */
-  color: var(--text-light);
+  content: "›";
+  color: var(--color-gray-600);
   font-weight: 600;
   margin: 0 0.5rem;
 }
 
 /* ---- Breadcrumb Hover Glow Effect ---- */
+
 .breadcrumb {
   transition: all 0.3s ease;
 }
-
 .breadcrumb a:hover {
-  color: var(--accent);
-  text-decoration: none;
-  text-shadow: 0 0 8px rgba(100, 255, 218, 0.8); /* glowing effect */
-  transition: text-shadow 0.3s ease, color 0.3s ease;
+  color: var(--color-maroon-700);
+  text-decoration: underline;
 }
-
 .breadcrumb-item.active {
-  color: var(--text-light) !important;
-  text-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+  color: var(--text-heading) !important;
 }
 
 /* Scroll Progress Bar */
+
 #scrollProgressBar {
   position: fixed;
   top: 0;
   left: 0;
   height: 4px;
   width: 0%;
-  background: linear-gradient(90deg, var(--bs-primary), #00e0ff);
-  box-shadow: 0 0 10px var(--bs-primary);
+  background: var(--color-maroon-700);
+  box-shadow: 0 0 6px var(--color-maroon-500);
   z-index: 9999;
   transition: width 0.15s ease-out;
   border-radius: 0 2px 2px 0;
 }
 
-#scrollProgressBar {
-  animation: pulseGlow 2s infinite alternate;
-}
-
-@keyframes pulseGlow {
-  from {
-    box-shadow: 0 0 8px var(--bs-primary);
-  }
-  to {
-    box-shadow: 0 0 18px var(--bs-primary);
-  }
-}
-
 /* Back to Top Button */
+
 #backToTopBtn {
   position: fixed;
   bottom: 30px;
   right: 30px;
   z-index: 10000;
-  background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  color: var(--bs-primary);
+  background: var(--color-silver-200);
+  border: 1px solid var(--color-silver-400);
+  color: var(--color-navy-700);
   font-size: 1.5rem;
   border-radius: 50%;
   width: 48px;
@@ -321,17 +286,14 @@ footer {
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.4s ease, visibility 0.4s ease, transform 0.3s ease;
-  box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+  box-shadow: 0 0 8px var(--color-silver-400);
 }
-
-/* Hover and Glow */
 #backToTopBtn:hover {
-  background: rgba(0, 255, 255, 0.15);
-  box-shadow: 0 0 15px var(--bs-primary);
+  background: var(--color-maroon-500);
+  color: #fff;
+  box-shadow: 0 0 12px var(--color-maroon-500);
   transform: translateY(-4px);
 }
-
-/* Fade-In Class */
 #backToTopBtn.show {
   opacity: 1;
   visibility: visible;
