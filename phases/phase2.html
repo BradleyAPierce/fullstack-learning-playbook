@@ -73,17 +73,14 @@
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#nodeCourse">
-                  Node.js Essential Training – Alex Banks (5 h 15 m)
+                  Node.js Essential Training &#45; Eve Porcello (1h 19m)
                 </button>
               </h2>
               <div
                 id="nodeCourse"
                 class="accordion-collapse collapse"
                 data-bs-parent="#phase2Courses">
-                <div class="accordion-body glass-card">
-                  Learn to create servers, handle requests, and serve data to
-                  front-end applications using the Express framework.
-                </div>
+                <div class="accordion-body glass-card"></div>
               </div>
             </div>
 
@@ -94,17 +91,14 @@
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#sqlCourse">
-                  SQL Essential Training – Bill Weinman (3 h 30 m)
+                  SQL Essential Training &#45; Walter Shields (4h 36m)
                 </button>
               </h2>
               <div
                 id="sqlCourse"
                 class="accordion-collapse collapse"
                 data-bs-parent="#phase2Courses">
-                <div class="accordion-body glass-card">
-                  Query and structure relational databases, define primary keys,
-                  and connect your Node app to PostgreSQL.
-                </div>
+                <div class="accordion-body glass-card"></div>
               </div>
             </div>
 
@@ -115,17 +109,14 @@
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#noSqlCourse">
-                  NoSQL Essential Training – David Jones (2 h 40 m)
+                  NoSQL Essential Training &#45; Melanie McGee (45m)
                 </button>
               </h2>
               <div
                 id="noSqlCourse"
                 class="accordion-collapse collapse"
                 data-bs-parent="#phase2Courses">
-                <div class="accordion-body glass-card">
-                  Explore document-based data models and connect to MongoDB,
-                  preparing you for scalable non-relational structures.
-                </div>
+                <div class="accordion-body glass-card"></div>
               </div>
             </div>
 
@@ -136,17 +127,14 @@
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#apiCourse">
-                  Learning REST APIs – Ray Villalobos (2 h 50 m)
+                  Learning REST APIs &#45; Morten Rand&#45;Hendriksen (1h 51m)
                 </button>
               </h2>
               <div
                 id="apiCourse"
                 class="accordion-collapse collapse"
                 data-bs-parent="#phase2Courses">
-                <div class="accordion-body glass-card">
-                  Build, document, and consume REST APIs to move data between
-                  your front-end and back-end services.
-                </div>
+                <div class="accordion-body glass-card"></div>
               </div>
             </div>
           </div>
@@ -257,30 +245,31 @@ app.listen(4000, () =&gt; console.log("API Server running on port 4000"));
               Object.keys(courseMap).forEach((key) => {
                 if (
                   course.courseName &&
-                  course.courseName.toLowerCase().includes(key.toLowerCase())
+                  course.courseName.trim().toLowerCase() ===
+                    key.trim().toLowerCase()
                 ) {
                   const accordionBody = document.querySelector(
                     `#${courseMap[key]} .accordion-body`
                   );
                   if (accordionBody) {
                     accordionBody.innerHTML = `
-                <strong>${course.courseName}</strong><br>
-                <em>Author:</em> ${course.author || ""}<br>
-                <em>Duration:</em> ${course.learningTime || ""}<br>
-                <p>${course.description || ""}</p>
-                ${
-                  course.learningObjectives && course.learningObjectives.length
-                    ? `<ul>${course.learningObjectives
-                        .map((obj) => `<li>${obj}</li>`)
-                        .join("")}</ul>`
-                    : ""
-                }
-                ${
-                  course.url
-                    ? `<a href="${course.url}" target="_blank">View Course</a>`
-                    : ""
-                }
-              `;
+          <strong>${course.courseName}</strong><br>
+          <em>Author:</em> ${course.author || ""}<br>
+          <em>Duration:</em> ${course.learningTime || ""}<br>
+          <p>${course.description || ""}</p>
+          ${
+            course.learningObjectives && course.learningObjectives.length
+              ? `<ul>${course.learningObjectives
+                  .map((obj) => `<li>${obj}</li>`)
+                  .join("")}</ul>`
+              : ""
+          }
+          ${
+            course.url
+              ? `<a href="${course.url}" target="_blank">View Course</a>`
+              : ""
+          }
+        `;
                   }
                 }
               });
